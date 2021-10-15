@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">serkanozdemir</string>
+    <string name="app_name">serkanozdemir-odev1</string>
+    <string name="prandana"><font color='#000000'>PR</font><font color='#1C2238'>A</font><font color='#000000'>NDANA</font></string>
+    <string name="as_guest">As Guest</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_with_facebook">Sign In with Facebook</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="what_would_you_like_to_see_today_popular">What would you like to see today? Popular</string>
 </resources>

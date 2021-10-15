@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Movies Section-->
+
+        <ImageView
+            android:id="@+id/ic_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/ic_movies"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="@id/txt_like"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_like" />
+
+        <TextView
+            android:id="@+id/txt_like"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:maxLines="4"
+            android:text="@string/what_would_you_like_to_see_today_popular"
+            android:textColor="#1C2238"
+            android:textSize="23sp"
+            app:layout_constraintLeft_toLeftOf="@id/ic_movie"
+            app:layout_constraintTop_toBottomOf="@id/ic_movie" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_movie"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline1" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_actors"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline3" />
+
+
+        <TextView
+            android:id="@+id/txt_actors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Popular Actor's"
+            android:textColor="#1C2238"
+            android:textSize="19sp"
+            app:layout_constraintLeft_toLeftOf="@id/ic_movie"
+            app:layout_constraintTop_toTopOf="@id/guideline2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="32dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="See All"
+            android:textColor="#3544C4"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_actors" />
+        <!-- NavBar Section-->
+        <ImageView
+            android:id="@+id/navbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/ic_rectangle1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_profile"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/navbar"
+            app:layout_constraintRight_toRightOf="@id/navbar"
+            app:layout_constraintTop_toTopOf="@id/navbar"
+
+            />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/ic_home"
+            android:elevation="2dp"
+            android:shadowColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/navbar"
+            app:layout_constraintLeft_toLeftOf="@id/navbar"
+            app:layout_constraintTop_toTopOf="@+id/navbar" />
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:background="@drawable/ic_heart"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/navbar"
+            app:layout_constraintLeft_toRightOf="@id/home"
+            app:layout_constraintTop_toTopOf="@id/navbar" />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_notifications"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/navbar"
+            app:layout_constraintLeft_toRightOf="@id/heart"
+            app:layout_constraintRight_toLeftOf="@id/profile"
+            app:layout_constraintTop_toTopOf="@id/navbar" />
+
+        <ImageView
+            android:id="@+id/pinned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_pinned"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/navbar"
+            app:layout_constraintLeft_toLeftOf="@id/navbar"
+            app:layout_constraintTop_toTopOf="@+id/navbar" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.17" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.64" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
