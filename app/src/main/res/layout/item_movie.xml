@@ -1,0 +1,68 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="30dp"
+        android:background="#FFFF"
+        app:cardElevation="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgMovie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_rectangle"
+            android:alpha="0.6"
+            android:backgroundTint="#858282"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/textScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_star" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_rectangle"
+            android:backgroundTint="#858282"
+            android:alpha="0.6"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="172dp" />
+
+        <ImageView
+            android:id="@+id/imgFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="182dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/white"
+            android:background="@drawable/ic_heart1" />
+
+    </androidx.cardview.widget.CardView>
+</layout>
